@@ -57,25 +57,4 @@ def delete_node(head, position):
     temp.next = next
 
     return head
-#---delete by value---
-def delete_node_by_value(head, key):
-    temp = head
-    prev = None
-
-    if temp is not None and temp.data == key:
-        head = temp.next
-        temp = None
-        return head
-
-    while temp is not None and temp.data != key:
-        prev = temp
-        temp = temp.next
-
-    if temp is None:
-        return head
-
-    prev.next = temp.next
-    temp = None
-
-    return head
-#serach for an element in the linked list
+#---delete
