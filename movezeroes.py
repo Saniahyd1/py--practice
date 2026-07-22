@@ -6,10 +6,7 @@ def moveZeroes(nums):
             if i != j:
                 nums[j], nums[i] = nums[i], nums[j]
             j += 1
-# ---- Driver Code ----
 if __name__ == "__main__":
-    nums = list(map(int, input("Enter numbers separated by space: ").split()))
-    
+    nums = list(map(int, input("Enter numbers separated by space: ").split()))  
     moveZeroes(nums)
-    
     print("Output:", nums)
