@@ -27,3 +27,4 @@ def find_rotation_count(nums: list[int]) -> int:
 # Example Usage:
 # nums = [4, 5, 6, 7, 0, 1, 2]
 # Output: 4 (Array was rotated 4 times)
+ 
