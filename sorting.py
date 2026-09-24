@@ -7,6 +7,5 @@ class Solution:
             return count<=1
 nums = list(map(int, input("Enter the list of numbers: ").split()))
 solution = Solution()   
-print(solution.check(nums))
-        
+print(solution.check(nums))    
 #Given an array nums, return True if the array was originally sorted in non-decreasing order and then rotated some number of positions (including 0 times). Otherwise, return False.
