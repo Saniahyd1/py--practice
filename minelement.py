@@ -5,8 +5,7 @@ def find_min_rotated_array(nums: list[int]) -> int:
     while left <= right:
         mid = (left + right) // 2 
         if mid < right and nums[mid] > nums[mid + 1]:
-            return nums[mid + 1]        
-        # Check if mid itself is the minimum element
+            return nums[mid + 1]
         if mid > left and nums[mid - 1] > nums[mid]:
             return nums[mid]        
         # Decide whether to go left or right
