@@ -9,9 +9,20 @@
 
 
 #NO. of vowels
-text = input("enter the string:")
-count=0
-for ch in text:
-  if ch in "aeiou":
-    count += 1
-print(count)
+#text = input("enter the string:")
+#count=0
+#for ch in text:
+#  if ch in "aeiou":
+#    count += 1
+#rint(count)
+
+#search in a list
+list=[int(x) for x in input("enter the nums with commas:").split(",")]
+element= int(input("enter the element:"))
+found= False
+if element in list:
+  found= True
+if found:
+  print("found")
+else:
+  print("not found")
