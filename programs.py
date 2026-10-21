@@ -17,12 +17,21 @@
 #rint(count)
 
 #search in a list
-list=[int(x) for x in input("enter the nums with commas:").split(",")]
-element= int(input("enter the element:"))
-found= False
-if element in list:
-  found= True
-if found:
-  print("found")
-else:
-  print("not found")
+#list=[int(x) for x in input("enter the nums with commas:").split(",")]
+#element= int(input("enter the element:"))
+#found= False
+#if element in list:
+#  found= True
+#if found:
+#  print("found")
+#else:
+#  print("not found")
+
+
+#largest number in a list
+#nums=[int(x) for x in input("enter the nums with commas:").split(",")]
+#largest= nums[0]
+#for i in nums:
+#  if i >largest:
+#    largest=i
+#print(largest)
