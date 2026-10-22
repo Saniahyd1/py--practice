@@ -35,3 +35,18 @@
 #  if i >largest:
 #    largest=i
 #print(largest)
+
+
+
+nums=[int(i) for i in input('enter the numbers:').split(',')]
+left= int(input("enter the index from which list should be reversed:"))
+right=int(input("enter the index till which list should be reversed:"))
+
+def func(nums, left, right):
+    if left>=right:
+        return nums
+    nums[left], nums[right]= nums[right], nums[left]
+    return func(nums, left+1, right-1)
+
+result= func(nums, left, right)
+print("modified list:", result)
