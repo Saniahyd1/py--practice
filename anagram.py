@@ -1,16 +1,26 @@
-class Solution:
-    def isAnagram(self, s: str, t: str) -> bool:
-        if len(s) != len(t):
+s=input("Enter string 1:")
+t=input("Enter String 2:")
+#def anagram(s,t):
+#    sorted_s= sorted(s)
+#    sorted_t= sorted(t)
+#
+#    if sorted_s==sorted_t:
+#        print("text is anagram")
+#    else:
+#        print("Not anagram")
+
+def anagram(s,t):
+    freq={}
+    if len(s)!=len(t):
+        return False
+
+    for ch in s:
+        freq[ch]=freq.get(ch,0)+1
+    for ch in t:
+        if ch not in freq:
             return False
-        count = {}
-        for char in s:
-            count[char] = count.get(char, 0) + 1
-        for char in t:
-            if char not in count or count[char] == 0:
-                return False
-            count[char] -= 1
-        return True
-s= input("Enter the first string: ")
-t= input("Enter the second string: ")
-solution = Solution()
-print(solution.isAnagram(s, t))
+    return True  
+        
+print(anagram(s,t))
+
+
