@@ -12,6 +12,6 @@ class Solution:
             else:
                 vote -= 1
         return majority
-nums = list(map(int, input("Enter the list of numbers: ").split()))
+nums= [int(x) for x in input("Enter the list :").split()]
 sol = Solution()  
 print(sol.majorityElement(nums))
