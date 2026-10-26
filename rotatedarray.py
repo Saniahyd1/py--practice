@@ -9,7 +9,7 @@ def search_rotated_array(nums: list[int], target: int) -> int:
         
         
         if nums[left] <= nums[mid]:
-            # Target lies within the sorted left half
+            
             if nums[left] <= target < nums[mid]:
                 right = mid - 1
             else:
