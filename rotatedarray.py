@@ -14,15 +14,14 @@ def search_rotated_array(nums: list[int], target: int) -> int:
                 right = mid - 1
             else:
                 left = mid + 1
-        # Otherwise, the right half must be sorted
         else:
-            # Target lies within the sorted right half
+            
             if nums[mid] < target <= nums[right]:
                 left = mid + 1
             else:
                 right = mid - 1
                 
-    return -1  # Target not found
+    return -1  
 
 # Example Usage:
 # nums =, target = 0
