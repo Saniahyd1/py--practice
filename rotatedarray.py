@@ -24,5 +24,4 @@ def search_rotated_array(nums: list[int], target: int) -> int:
     return -1  
 
 # Example Usage:
-# nums =, target = 0
 # Output: 4 (index of 0)
