@@ -1,6 +1,6 @@
 #common element
-#list1 = [int(x) for x in input("Enter numbers for list 1 (comma-separated): ").split(",")]
-#list2 = [int(x) for x in input("Enter numbers for list 2 (comma-separated): ").split(",")]
+#list1 = [int(x) for x in input("Enter numbers for list 1").split(",")]
+#list2 = [int(x) for x in input("Enter numbers for list 2").split(",")]
 #result = []
 #for item in list1:
 #  if item in list2:
@@ -14,7 +14,7 @@
 #for ch in text:
 #  if ch in "aeiou":
 #    count += 1
-#rint(count)
+#print(count)
 
 #search in a list
 #list=[int(x) for x in input("enter the nums with commas:").split(",")]
