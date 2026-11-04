@@ -8,7 +8,7 @@ def reverse(nums, left, right):
         left+=1
         right-=1
 def rotate(nums, k):    
-    n=len(arr)
+    n=len(nums)
     if n==0:
         return nums
     k=k%n
