@@ -1,27 +1,20 @@
-def search_rotated_array(nums: list[int], target: int) -> int:
-    left, right = 0, len(nums) - 1
-    
-    while left <= right:
-        mid = (left + right) // 2
-        
-        if nums[mid] == target:
-            return mid
-        
-        
-        if nums[left] <= nums[mid]:
-            
-            if nums[left] <= target < nums[mid]:
-                right = mid - 1
-            else:
-                left = mid + 1
-        else:
-            
-            if nums[mid] < target <= nums[right]:
-                left = mid + 1
-            else:
-                right = mid - 1
-                
-    return -1  
+arr= [int(x) for x in input("Enter the numbers:").split(',')]
+k=int(input("Enter the no. of times to rotate"))
 
-# Example Usage:
-# Output: 4 (index of 0)
+def reverse(nums, left, right):
+    
+    while left<right:
+        nums[left], nums[right]= nums[right], nums[left]
+        left+=1
+        right-=1
+def rotate(nums, k):    
+    n=len(arr)
+    if n==0:
+        return nums
+    k=k%n
+    reverse(nums,n-k, n-1)
+    reverse(nums,0, n-k-1)
+    reverse(nums, 0, n-1)
+    return nums
+
+print("Rotated array:", rotate(arr, k))
