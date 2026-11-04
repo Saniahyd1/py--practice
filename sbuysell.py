@@ -1,11 +1,11 @@
-prices= [int(x) for x in input("enter the list:").split(',')]
-def stockbuy(nums):
-    max_profit=0
-    min_price=float('inf')
-    n=len(nums)
-    for i in range(0,n):
-        min_price=min(min_price,nums[i])
-        max_profit=max(max_profit, nums[i]-min_price)
+nums=[int(x) for x in input("enter the array:").split(",")]
+def stock(price):
+    n = len(price)
+    max_profit= 0
+    min_price= float('inf')
+    for i in range(0,n):  
+        min_price=min(min_price, price[i])
+        max_profit= max(max_profit,price[i]-min_price)
     return max_profit
-result = stockbuy(prices)
-print("result:",{result})
+result = stock(nums)
+print(result)
