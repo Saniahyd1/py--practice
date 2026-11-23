@@ -11,6 +11,4 @@ def maxOnes(nums):
             
             count=0
     return max_count
-
-
 print(maxOnes(num))
