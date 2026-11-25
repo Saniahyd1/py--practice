@@ -15,7 +15,6 @@ class Solution:
                 res += 1
                 prevEnd = min(end, prevEnd)
         return res
-# -------- Driver Code --------
 if __name__ == "__main__":
     n = int(input("Enter number of intervals: "))
     intervals = []
@@ -26,3 +25,9 @@ if __name__ == "__main__":
     sol = Solution()
     result = sol.eraseOverlapIntervals(intervals)
     print("Minimum intervals to remove:", result)
+
+
+
+
+
+    

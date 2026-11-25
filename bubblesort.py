@@ -8,11 +8,7 @@ def bubblesort(nums):
                 nums[j], nums[j+1]= nums[j+1], nums[j]
                 if swapped==False: 
                     swapped = True
-                
         if not swapped:
-            
-            break
-                
+            break           
     return nums, swapped
-
 print(bubblesort(arr))
